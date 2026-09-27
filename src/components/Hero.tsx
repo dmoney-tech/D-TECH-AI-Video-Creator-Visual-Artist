@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { ArrowRight, RotateCcw } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import heroPoster from '../assets/images/hero_cinematic_scifi_1790369763150.jpg';
 
 interface HeroProps {
@@ -41,25 +41,6 @@ export const Hero: React.FC<HeroProps> = ({
       />
 
       <div className="max-w-7xl mx-auto px-6 sm:px-8 w-full">
-        {/* Top Eyebrow Bar */}
-        <div className="flex flex-wrap items-center justify-between gap-4 mb-6">
-          <div className="flex items-center gap-3 text-xs tracking-[0.25em] uppercase text-[#B8863B] font-semibold">
-            <span className="w-6 h-[1.5px] bg-[#B8863B]" />
-            <span>AI VIDEO CREATOR • AI VIDEO EDITOR</span>
-          </div>
-
-          {onReplayIntro && (
-            <button
-              onClick={onReplayIntro}
-              className="inline-flex items-center gap-2 px-3 py-1 bg-black/60 dark:bg-black/60 light:bg-white/80 border border-[#B8863B]/40 hover:border-[#B8863B] hover:bg-[#B8863B]/10 text-[11px] font-mono tracking-wider text-[#D4A85B] dark:text-[#D4A85B] light:text-[#6F4A24] transition-all cursor-pointer shadow-sm"
-              title="Replay 5-second showreel sequence"
-            >
-              <RotateCcw className="w-3 h-3 text-[#B8863B]" />
-              <span>REPLAY INTRO</span>
-            </button>
-          )}
-        </div>
-
         {/* Main Headline */}
         <div className="max-w-5xl mb-8">
           <h1 className="font-display font-extrabold text-5xl sm:text-7xl lg:text-[5.5rem] tracking-[-0.03em] leading-[0.95] text-white dark:text-white light:text-[#0B0B0B] text-balance">

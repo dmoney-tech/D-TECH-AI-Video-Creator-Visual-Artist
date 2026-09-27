@@ -9,11 +9,9 @@ import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { FeaturedProjects } from './components/FeaturedProjects';
 import { Services } from './components/Services';
-import { FromAiToFinalCut } from './components/FromAiToFinalCut';
 import { FeaturedFilm } from './components/FeaturedFilm';
 import { ImageGallery } from './components/ImageGallery';
 import { AIToolkit } from './components/AIToolkit';
-import { Process } from './components/Process';
 import { About } from './components/About';
 import { Philosophy } from './components/Philosophy';
 import { Testimonials } from './components/Testimonials';
@@ -148,10 +146,6 @@ export function PortfolioContent() {
         {/* 4. What I Do With AI */}
         <Services onOpenInquiry={() => setInquiryOpen(true)} />
 
-        {/* 5 & 6. From AI Generation To Final Cut + See The Edit */}
-        <FromAiToFinalCut />
-
-
         {/* 8. Featured AI Film (Festival Presentation) */}
         <FeaturedFilm onWatchFullProject={(video) => setActiveVideo(video)} />
 
@@ -163,8 +157,6 @@ export function PortfolioContent() {
         {/* 10. AI Toolkit */}
         <AIToolkit />
 
-        {/* 11. Creative Process (How I Turn An Idea Into A Video) */}
-        <Process />
 
         {/* 12. Why AI Video? (AI-Generated. Human-Directed.) */}
         <Philosophy />

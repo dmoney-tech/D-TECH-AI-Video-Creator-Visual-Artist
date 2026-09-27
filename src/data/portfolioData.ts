@@ -607,14 +607,14 @@ export const WHAT_I_CREATE_CATEGORIES: CategoryPreview[] = [
 
 // 6. FEATURED AI FILM
 export const FEATURED_FILM = {
-  title: 'THE LAST JOURNEY',
+  title: 'THE ART OF CHOCOLATE',
   subheading: 'Official Festival Selection · Autonomous AI Narrative Film',
   duration: '04:18',
   year: '2026',
   aspectRatio: '2.39:1 Anamorphic',
   videoUrl: 'https://res.cloudinary.com/r47dziu3/video/upload/v1790445008/watch_video.mp4',
   poster: heroSciFi,
-  description: 'Centuries after atmospheric collapse, a lone courier traverses the Obsidian Expanse to reignite the Sol-Core beacon. Guided only by acoustic resonance relics, she must confront the mirages left behind by ancient terraformers.',
+  description: 'A cinematic chocolate commercial crafted with rich textures, dramatic lighting, and precise visual storytelling. From melting chocolate to premium product details, every shot is designed to make the experience feel luxurious, indulgent, and unforgettable.',
   roles: [
     { title: 'AI VIDEO CREATION', detail: 'Custom LoRA checkpoints, prompt architecture, neural camera paths' },
     { title: 'CREATIVE DIRECTION', detail: 'Visual tone bible, 70mm lens references, golden-hour lighting language' },

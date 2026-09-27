@@ -66,3 +66,31 @@ button, input, select, textarea {
 ::-webkit-scrollbar-thumb:hover {
   background: #B8863B;
 }
+
+/* Subtle futuristic light sweep for AI video showcase */
+@keyframes aiLightSweep {
+  0% {
+    transform: translateX(-150%) skewX(-20deg);
+  }
+  50%, 100% {
+    transform: translateX(250%) skewX(-20deg);
+  }
+}
+
+@keyframes goldLightSweep {
+  0% {
+    transform: translateX(-140%) skewX(-18deg);
+  }
+  45%, 100% {
+    transform: translateX(240%) skewX(-18deg);
+  }
+}
+
+.animate-ai-sweep {
+  animation: aiLightSweep 7s ease-in-out infinite;
+}
+
+.animate-gold-sweep {
+  animation: goldLightSweep 7.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
