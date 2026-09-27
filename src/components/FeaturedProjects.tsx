@@ -139,44 +139,44 @@ export const FeaturedProjects: React.FC<FeaturedProjectsProps> = ({ onPlayVideo 
   const renderBadgeIcon = (type: FeaturedProject['badgeType']) => {
     switch (type) {
       case 'video':
-        return <Play className="w-2.5 h-2.5 fill-[#38bdf8] text-[#38bdf8]" />;
+        return <Play className="w-2.5 h-2.5 fill-[#D4A85B] text-[#D4A85B]" />;
       case 'ai':
-        return <Sparkles className="w-2.5 h-2.5 text-[#38bdf8]" />;
+        return <Sparkles className="w-2.5 h-2.5 text-[#D4A85B]" />;
       case 'social':
-        return <Megaphone className="w-2.5 h-2.5 text-[#38bdf8]" />;
+        return <Megaphone className="w-2.5 h-2.5 text-[#D4A85B]" />;
       case 'branding':
-        return <PenTool className="w-2.5 h-2.5 text-[#38bdf8]" />;
+        return <PenTool className="w-2.5 h-2.5 text-[#D4A85B]" />;
     }
   };
 
   return (
     <section
       id="ai-videos"
-      className="relative py-24 sm:py-32 px-6 sm:px-8 w-full bg-[#060b14] overflow-hidden border-t border-cyan-500/10"
+      className="relative py-24 sm:py-32 px-6 sm:px-8 w-full bg-[#120D07] overflow-hidden border-t border-[#B8863B]/20"
     >
       {/* Scroll anchor aliases for smooth navigation */}
       <span id="projects" className="absolute -top-24" aria-hidden="true" />
       <span id="work" className="absolute -top-24" aria-hidden="true" />
 
-      {/* Atmospheric Futuristic Lighting Background */}
+      {/* Atmospheric Golden Brown Lighting Background */}
       <div
-        className="pointer-events-none absolute -top-40 right-1/4 w-[600px] h-[600px] rounded-full bg-cyan-500/10 blur-[150px] opacity-70"
+        className="pointer-events-none absolute -top-40 right-1/4 w-[600px] h-[600px] rounded-full bg-[#B8863B]/10 blur-[150px] opacity-70"
         aria-hidden="true"
       />
       <div
-        className="pointer-events-none absolute top-1/2 left-[-100px] w-[500px] h-[500px] rounded-full bg-blue-600/10 blur-[140px] opacity-60"
+        className="pointer-events-none absolute top-1/2 left-[-100px] w-[500px] h-[500px] rounded-full bg-[#8C6226]/12 blur-[140px] opacity-60"
         aria-hidden="true"
       />
       <div
-        className="pointer-events-none absolute bottom-0 right-10 w-[450px] h-[450px] rounded-full bg-sky-500/10 blur-[140px] opacity-50"
+        className="pointer-events-none absolute bottom-0 right-10 w-[450px] h-[450px] rounded-full bg-[#D4A85B]/10 blur-[140px] opacity-50"
         aria-hidden="true"
       />
 
-      {/* Subtle Futuristic Tech Grid Pattern */}
+      {/* Subtle Golden Tech Grid Pattern */}
       <div
-        className="pointer-events-none absolute inset-0 opacity-[0.035]"
+        className="pointer-events-none absolute inset-0 opacity-[0.03]"
         style={{
-          backgroundImage: `linear-gradient(to right, #38bdf8 1px, transparent 1px), linear-gradient(to bottom, #38bdf8 1px, transparent 1px)`,
+          backgroundImage: `linear-gradient(to right, #B8863B 1px, transparent 1px), linear-gradient(to bottom, #B8863B 1px, transparent 1px)`,
           backgroundSize: '56px 56px',
         }}
         aria-hidden="true"
@@ -184,7 +184,7 @@ export const FeaturedProjects: React.FC<FeaturedProjectsProps> = ({ onPlayVideo 
 
       {/* Subtle light sweep beam */}
       <div
-        className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-[1px] bg-gradient-to-r from-transparent via-cyan-400/40 to-transparent"
+        className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-[1px] bg-gradient-to-r from-transparent via-[#D4A85B]/40 to-transparent"
         aria-hidden="true"
       />
 
@@ -194,21 +194,21 @@ export const FeaturedProjects: React.FC<FeaturedProjectsProps> = ({ onPlayVideo 
           {/* Left Column: Titles */}
           <div className="max-w-xl">
             {/* Section Eyebrow */}
-            <div className="text-[11px] font-mono font-semibold tracking-[0.2em] text-[#38bdf8] uppercase mb-2 flex items-center gap-2">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#38bdf8] shadow-[0_0_6px_#38bdf8]" />
+            <div className="text-[11px] font-mono font-semibold tracking-[0.2em] text-[#D4A85B] uppercase mb-2 flex items-center gap-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#B8863B] shadow-[0_0_6px_#B8863B]" />
               <span>MY WORK</span>
             </div>
 
             {/* Main Heading */}
             <h2 className="font-display font-bold text-2xl sm:text-3xl md:text-[34px] text-white tracking-tight leading-tight">
               Featured{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#38bdf8] via-[#60a5fa] to-[#93c5fd]">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F5D89F] via-[#D4A85B] to-[#B8863B]">
                 Projects
               </span>
             </h2>
 
             {/* Supporting Description */}
-            <p className="mt-2.5 text-xs sm:text-[13px] text-slate-300/85 leading-relaxed max-w-lg">
+            <p className="mt-2.5 text-xs sm:text-[13px] text-[#D5C7B5]/85 leading-relaxed max-w-lg">
               A collection of creative projects where I turn ideas into powerful visual stories.
               From cinematic edits to AI-enhanced content, every project is built with purpose and passion.
             </p>
@@ -216,7 +216,7 @@ export const FeaturedProjects: React.FC<FeaturedProjectsProps> = ({ onPlayVideo 
 
           {/* Right Column: Category Filters Pill Bar */}
           <div className="flex items-center overflow-x-auto pb-2 lg:pb-0 scrollbar-none">
-            <div className="inline-flex items-center p-1 rounded-full bg-[#0a1324]/85 border border-cyan-500/20 backdrop-blur-xl shadow-[0_4px_20px_rgba(0,0,0,0.5)] gap-1 shrink-0">
+            <div className="inline-flex items-center p-1 rounded-full bg-[#1C140C]/90 border border-[#B8863B]/30 backdrop-blur-xl shadow-[0_4px_20px_rgba(0,0,0,0.5)] gap-1 shrink-0">
               {CATEGORIES.map((category) => {
                 const isActive = activeCategory === category;
                 return (
@@ -225,8 +225,8 @@ export const FeaturedProjects: React.FC<FeaturedProjectsProps> = ({ onPlayVideo 
                     onClick={() => setActiveCategory(category)}
                     className={`px-3.5 sm:px-4 py-1.5 rounded-full text-[11px] sm:text-xs font-medium tracking-normal transition-all duration-200 cursor-pointer whitespace-nowrap ${
                       isActive
-                        ? 'bg-[#38bdf8] text-slate-950 font-semibold shadow-[0_0_15px_rgba(56,189,248,0.5)] scale-100'
-                        : 'text-slate-300 hover:text-white hover:bg-white/5 active:scale-95'
+                        ? 'bg-[#B8863B] text-black font-semibold shadow-[0_0_15px_rgba(184,134,59,0.5)] scale-100'
+                        : 'text-[#C4B5A0] hover:text-white hover:bg-white/5 active:scale-95'
                     }`}
                   >
                     {category}
@@ -243,13 +243,13 @@ export const FeaturedProjects: React.FC<FeaturedProjectsProps> = ({ onPlayVideo 
             <div
               key={project.id}
               onClick={() => handleCardClick(project)}
-              className="group relative flex flex-col rounded-3xl overflow-hidden bg-gradient-to-b from-[#0c1629]/95 via-[#091120]/95 to-[#060b14]/98 border border-cyan-500/20 hover:border-cyan-400/50 shadow-[0_10px_30px_rgba(0,0,0,0.6)] hover:shadow-[0_15px_40px_rgba(56,189,248,0.18)] transition-all duration-300 hover:-translate-y-1.5 cursor-pointer backdrop-blur-xl"
+              className="group relative flex flex-col rounded-3xl overflow-hidden bg-gradient-to-b from-[#1C140C]/95 via-[#150E07]/95 to-[#0F0B06]/98 border border-[#B8863B]/25 hover:border-[#D4A85B]/60 shadow-[0_10px_30px_rgba(0,0,0,0.6)] hover:shadow-[0_15px_40px_rgba(184,134,59,0.22)] transition-all duration-300 hover:-translate-y-1.5 cursor-pointer backdrop-blur-xl"
             >
-              {/* Futuristic Energy Border Glow Effect on Hover */}
-              <div className="absolute inset-0 rounded-3xl pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300 ring-1 ring-inset ring-cyan-400/40 shadow-[inset_0_0_20px_rgba(56,189,248,0.12)]" />
+              {/* Golden Energy Border Glow Effect on Hover */}
+              <div className="absolute inset-0 rounded-3xl pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300 ring-1 ring-inset ring-[#D4A85B]/40 shadow-[inset_0_0_20px_rgba(184,134,59,0.15)]" />
 
               {/* Card Image Visual Container */}
-              <div className="relative aspect-[16/10] w-full overflow-hidden bg-slate-950">
+              <div className="relative aspect-[16/10] w-full overflow-hidden bg-black">
                 <img
                   src={project.image}
                   alt={project.title}
@@ -258,10 +258,10 @@ export const FeaturedProjects: React.FC<FeaturedProjectsProps> = ({ onPlayVideo 
                 />
 
                 {/* Smooth Dark Gradient Overlay for optimal readability */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#091120] via-black/35 to-black/15 pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#150E07] via-black/35 to-black/15 pointer-events-none" />
 
-                {/* Top-Left Futuristic Category Glass Badge */}
-                <div className="absolute top-3.5 left-3.5 z-10 flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#060d1b]/80 backdrop-blur-md border border-cyan-400/25 text-[10px] sm:text-[11px] font-medium tracking-wide text-cyan-200 shadow-[0_0_10px_rgba(56,189,248,0.2)] group-hover:border-cyan-400/40 group-hover:shadow-[0_0_15px_rgba(56,189,248,0.35)] transition-all duration-200">
+                {/* Top-Left Category Glass Badge */}
+                <div className="absolute top-3.5 left-3.5 z-10 flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#181008]/85 backdrop-blur-md border border-[#B8863B]/35 text-[10px] sm:text-[11px] font-medium tracking-wide text-[#F5D89F] shadow-[0_0_10px_rgba(184,134,59,0.2)] group-hover:border-[#D4A85B]/50 group-hover:shadow-[0_0_15px_rgba(184,134,59,0.4)] transition-all duration-200">
                   {renderBadgeIcon(project.badgeType)}
                   <span>{project.badgeLabel}</span>
                 </div>
@@ -270,17 +270,17 @@ export const FeaturedProjects: React.FC<FeaturedProjectsProps> = ({ onPlayVideo 
               {/* Bottom Card Content: Title, Description & Circular Arrow Button */}
               <div className="p-4 sm:p-5 flex items-end justify-between gap-3 mt-auto">
                 <div className="flex-1 min-w-0 pr-2">
-                  <h3 className="text-sm sm:text-base font-bold text-white tracking-tight group-hover:text-cyan-200 transition-colors line-clamp-1">
+                  <h3 className="text-sm sm:text-base font-bold text-white tracking-tight group-hover:text-[#F5D89F] transition-colors line-clamp-1">
                     {project.title}
                   </h3>
-                  <p className="mt-1 text-[11px] sm:text-xs text-slate-400 leading-normal line-clamp-2">
+                  <p className="mt-1 text-[11px] sm:text-xs text-[#A89E8E] leading-normal line-clamp-2">
                     {project.description}
                   </p>
                 </div>
 
                 {/* Circular Glass Arrow Button with Glowing Border */}
                 <div
-                  className="w-9 h-9 sm:w-10 sm:h-10 rounded-full flex items-center justify-center bg-cyan-950/60 group-hover:bg-[#38bdf8] text-cyan-300 group-hover:text-slate-950 border border-cyan-400/40 group-hover:border-[#38bdf8] transition-all duration-300 backdrop-blur-md shadow-[0_0_12px_rgba(56,189,248,0.2)] group-hover:shadow-[0_0_18px_rgba(56,189,248,0.55)] shrink-0 active:scale-95"
+                  className="w-9 h-9 sm:w-10 sm:h-10 rounded-full flex items-center justify-center bg-[#2A1D0E]/80 group-hover:bg-[#B8863B] text-[#D4A85B] group-hover:text-black border border-[#B8863B]/50 group-hover:border-[#D4A85B] transition-all duration-300 backdrop-blur-md shadow-[0_0_12px_rgba(184,134,59,0.25)] group-hover:shadow-[0_0_18px_rgba(212,168,91,0.6)] shrink-0 active:scale-95"
                   aria-label={`Open ${project.title}`}
                 >
                   <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" />
