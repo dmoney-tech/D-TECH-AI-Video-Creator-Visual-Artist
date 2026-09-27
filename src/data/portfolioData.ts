@@ -157,11 +157,9 @@ export const CREATOR_PROFILE = {
   heroVideo: 'https://res.cloudinary.com/r47dziu3/video/upload/v1790374824/AI_filmmaker_showreel_sequences_20260925231912.mp4',
   heroPoster: heroSciFi,
   socials: [
-    { name: 'Instagram', url: 'https://instagram.com', handle: '@dtech.aivideo' },
-    { name: 'YouTube', url: 'https://youtube.com', handle: 'D. Tech AI Cinema' },
-    { name: 'TikTok', url: 'https://tiktok.com', handle: '@dtech.film' },
-    { name: 'LinkedIn', url: 'https://linkedin.com', handle: 'Daniel Tech' },
-    { name: 'Email', url: 'mailto:contact@dtech-aivideo.com', handle: 'contact@dtech-aivideo.com' },
+    { name: 'Instagram', url: 'https://www.instagram.com/shobowale336?stkn=eXd3ZXhvM2UyZ21p&utm_source=qr', handle: '@shobowale336' },
+    { name: 'WhatsApp', url: 'https://wa.me/9122521328', handle: '+9122521328' },
+    { name: 'Email', url: 'mailto:Shobowaledaniel476@gmail.com', handle: 'Shobowaledaniel476@gmail.com' },
   ]
 };
 
